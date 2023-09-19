@@ -1,0 +1,292 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: Inter;
+    src: url(../fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+body{
+    font-family: Inter;
+    font-size: 15px;
+}
+p{
+    font-size: 18px;
+    font-weight: 400;
+}
+.continaer{
+    margin: auto;
+    width: 1200px;
+    /* background-color: antiquewhite; */
+    height: auto;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 35px;
+}
+ul{
+    list-style-type: none;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in;
+    transition-delay: 0.3s;
+}
+li{
+    display: inline;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    color: rgb(134, 134, 134);
+}
+.hightligt-content{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 30px;
+}
+.banner{
+    width: 66%;
+    position: relative;
+}
+.image-banner img{
+    width: 100%;
+}
+
+.news-hightligt{
+    width: 33%;
+    margin-left: 20px;
+    background-color: hsl(240, 100%, 5%);
+    padding: 30px;
+}
+.news-hightligt span{
+    color: hsl(35, 77%, 62%);
+    font-size: 40px;
+    font-weight: 700;
+}
+.hightligt-title {
+    margin-top: 40px;
+    color: white;
+    font-weight: 800;
+    font-size: 22px;
+}
+.banner-detail{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+.banner-news-title{
+    width: 50%;
+}
+.banner-news-title span{
+    font-size: 40px;
+    font-weight: 800;
+}
+.banner-news-description{
+    width: 50%;
+    line-height: 25px;
+    margin-left: 20px;
+}
+.banner-news-description button{
+    position: absolute;
+    bottom: 0;
+    width: 200px;
+    height: 60px;
+    border: none;
+    background-color: hsl(5, 85%, 63%);
+    color: white;
+    font-size: 20px;
+    text-transform:uppercase;
+}
+.banner-news-description button:hover{
+    background-color: hsl(5, 45%, 23%);
+}
+.news-hightligt-content{
+    padding-bottom: 25px;
+    /* border-bottom: 1px solid rgb(225, 225, 225); */
+}
+.hightligt-description{
+    margin-top: 10px;
+    color: rgb(163, 163, 163);
+}
+hr{
+    border-bottom: 1px solid rgb(126, 126, 126);
+}
+
+.top3-content{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+}
+.top-content{
+    display: flex;
+    flex-direction: row;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    justify-items: center;
+}
+.top-content-image img{
+    width: 120px;
+}
+.top-content-detail{
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.top-content-detail strong{
+    color: rgb(218, 216, 216);
+    font-size: 35px;
+    font-weight: 800;
+}
+.top-content-detail span{
+    font-size: 18px;
+    font-weight: 900;
+}
+.top-content-detail p{
+    margin-top: 5px;
+    font-size: 15px;
+    line-height: 25px;
+}
+.bt-close{
+    display: none;
+}
+.toggle-open{
+    display: none;
+}
+.bt-open{
+    display: none;
+}
+
+/* @media only screen and (min-width: 700px) {
+    .bt-open{
+        display: none;
+    }
+    .bt-close{
+        display: none;
+    }
+} */
+
+@media only screen and (max-width: 700px) {
+    .continaer{
+        width: 90%;
+    }
+    .hightligt-content{
+        flex-direction: column;
+    }
+    .navbar{
+        display: inline;
+    }
+    .toggle-open{
+        display: block;
+    }
+    .top3-content{
+        flex-direction: column;
+    }
+    .banner{
+        width: 100%;
+    }
+    .banner-detail{
+        flex-direction: column;
+    }
+    .banner-news-description{
+        width: 100%;
+        margin-top: 10px;
+        margin-left: 0px;
+    }
+    .banner-news-title{
+        width: 100%;
+    }
+    .banner-news-description button{
+        margin-top: 15px;
+        position: relative;
+        width: 150px;
+        height: 50px;
+        font-size: 10px;
+    }
+    .news-hightligt{
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 40px;
+    }
+    .top-content{
+        padding-right:0px;
+    }
+    .navbar{
+        /* background-color: beige; */
+        width: 60%;
+        position: absolute;
+        right: 0;
+        z-index: 80;
+    }
+    ul{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top:0;
+        right: 0px;
+        z-index: 40;
+        width: 0px;
+        height: 100vh;
+        position: fixed;
+        background-color: rgb(255, 255, 255);
+        
+    }
+    .bt-close{
+        position: absolute;
+        right: 0;
+        padding: 30px;
+        z-index: 50;
+        cursor: pointer;
+    }
+    li{
+        display: block;
+        position: relative;
+        top: 100px; 
+        color: black;
+        margin: 25px;
+    }
+    .hightligt-content section{
+        backdrop-filter: blur(10px);
+    }
+    .blur{
+        filter: blur(3px);
+    }
+    .bt-open{
+        cursor: pointer;
+    }
+    .active{
+        display: block;
+    }
+    .menu-active{
+        display: flex;
+        animation-name: openMenu; 
+        animation-duration: 0.3s;
+        animation-fill-mode: forwards; 
+
+    }
+    .menu-deactive{
+        animation-name: closMenu; /* ชื่อ @keyframes ที่คุณสร้าง */
+        animation-duration: 0.3s; /* ระยะเวลาที่ต้องการให้แอนิเมชันเป็นอย่างน้อย */
+        animation-fill-mode: forwards; 
+    }
+    @keyframes openMenu {
+        from {
+            width: 0%;
+        }
+        to {
+            width: 60%; /* แทนค่าที่คุณต้องการสำหรับความสูงสุด */
+        }
+    }
+    @keyframes closMenu {
+        from {
+            width: 60%;
+        }
+        to {
+            width: 0%; /* แทนค่าที่คุณต้องการสำหรับความสูงสุด */
+        }
+    }
+}

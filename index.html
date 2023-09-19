@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | News homepage</title>
+
+  <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+
+<body>
+  <div class="continaer">
+    <section class="header">
+      <div class="logo" id="logo""><img src="./assets/images/logo.svg" alt="logo"></div>
+      <div class="bt-open active" id="bt-open"><img src="./assets/images/icon-menu.svg" alt="" onclick="open_menu()"></div>
+      <nav class="navbar">
+        <ul id="menu">
+          <div class="bt-close" id="bt-close"><img src="./assets/images/icon-menu-close.svg" alt="" onclick="close_menu()"></div>
+          <div class="menu">
+            <li>Home</li>
+            <li>New</li>
+            <li>Popular</li>
+            <li>Trending</li>
+            <li>Categories</li>
+          </div>
+        </ul>
+      </nav>
+    </section>
+
+    <section class="hightligt-content" id="hightligt-content">
+      <div class="banner">
+        <div class="image-banner">
+          <img src="./assets/images/image-web-3-desktop.jpg" alt="">
+        </div>
+        <div class="banner-detail">
+          <div class="banner-news-title">
+            <span>The Bright Future of Web 3.0?</span>
+          </div>
+          <div class="banner-news-description">
+            <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the
+              hands of the people.
+              But is it really fulfilling its promise?</p>
+            <button>Read more</button>
+          </div>
+        </div>
+      </div>
+      <div class="news-hightligt">
+        <span>New</span>
+        <div class="news-hightligt-content">
+          <div class="hightligt-title">
+            <p>Hydrogen VS Electric Cars</p>
+          </div> 
+          <div class="hightligt-description">
+            <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+          </div>
+        </div>
+        <hr>
+        <div class="news-hightligt-content">
+          <div class="hightligt-title">
+            <p>The Downsides of AI Artistry</p>
+          </div>
+          <div class="hightligt-description">
+            <p>What are the possible adverse effects of on-demand AI image generation?</p>
+          </div>
+        </div>
+        <hr>
+        <div class="news-hightligt-content">
+          <div class="hightligt-title">
+            <p>Is VC Funding Drying Up?</p>
+          </div>
+          <div class="hightligt-description">
+            <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <section class="top3-content" id="top3-content">
+      <div class="top-content">
+        <div class="top-content-image"><img src="./assets/images/image-retro-pcs.jpg"></div>
+        <div class="top-content-detail">
+          <strong>01</strong>
+          <span>Reviving Retro PCs</span>
+          <p>What happens when old PCs are given modern upgrades?</p>
+        </div>
+      </div>
+      <div class="top-content">
+        <div class="top-content-image"><img src="./assets/images/image-top-laptops.jpg"></div> 
+        <div class="top-content-detail">
+          <strong>02</strong>
+          <span>Top 10 Laptops of 2022</span>
+          <p>Our best picks for various needs and budgets.</p>
+        </div>
+      </div>    
+      <div class="top-content">
+        <div class="top-content-image"><img src="./assets/images/image-gaming-growth.jpg"></div> 
+        <div class="top-content-detail">
+          <strong>03</strong>
+          <span>The Growth of Gaming</span>
+          <p>How the pandemic has sparked fresh opportunities.</p>
+        </div>
+
+      </div>
+    </section>
+  </div>
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
