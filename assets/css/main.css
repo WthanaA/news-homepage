@@ -41,6 +41,9 @@ li{
     font-size: 18px;
     color: rgb(134, 134, 134);
 }
+li:hover{
+    color: hsl(35, 77%, 62%);
+}
 .hightligt-content{
     display: flex;
     flex-direction: row;
@@ -72,6 +75,12 @@ li{
     font-weight: 800;
     font-size: 22px;
 }
+/* .hightligt-title:hover{
+    color: hsl(35, 77%, 62%);
+} */
+.news-hightligt-content:hover .hightligt-title{
+    color: hsl(35, 77%, 62%);
+}
 .banner-detail{
     display: flex;
     flex-direction: row;
@@ -101,10 +110,11 @@ li{
     text-transform:uppercase;
 }
 .banner-news-description button:hover{
-    background-color: hsl(5, 45%, 23%);
+    background-color: hsl(240, 100%, 5%)
 }
 .news-hightligt-content{
     padding-bottom: 25px;
+    cursor: pointer;
     /* border-bottom: 1px solid rgb(225, 225, 225); */
 }
 .hightligt-description{
@@ -127,6 +137,10 @@ hr{
     padding-top: 20px;
     padding-bottom: 20px;
     justify-items: center;
+    cursor: pointer;
+}
+.top-content:hover .top-content-detail span{
+    color: hsl(5, 85%, 63%);
 }
 .top-content-image img{
     width: 120px;
